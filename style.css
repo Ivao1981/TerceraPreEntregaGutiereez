@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los botones de filtro */
+#filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filtros button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filtros button:hover {
+    background-color: #0056b3;
+}
+
+#filtros button.active {
+    background-color: #0056b3;
+}
+
+/* Estilo de la lista de tareas */
+#listaTareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tarea:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.tarea span {
+    flex-grow: 1;
+}
+
+.tarea button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarea .boton-completar {
+    background-color: #28a745;
+    color: white;
+}
+
+.tarea .boton-completar:hover {
+    background-color: #218838;
+}
+
+.tarea .boton-eliminar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tarea .boton-eliminar:hover {
+    background-color: #c82333;
+}
